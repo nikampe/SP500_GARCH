@@ -1,5 +1,5 @@
-function state = pacPlot(data, oTitle, file_name)
-% This function produces and saves a sample partial autocorrelation plot
+function state = plotAcf(data, oTitle, file_name)
+% Creates and saves a plot of Sample Autocorrelations 
 %
 % INPUT data 1xn ... any column vector of time series
 %       oTitle str ... text title of plot
@@ -7,9 +7,14 @@ function state = pacPlot(data, oTitle, file_name)
 % OUTPUT state  bool .. succes/failure of operation
 %
 % MATLAB Class - Group Assignment | Charalampos Elenidis, Niklas Kampe
-parcorr(data);
+
+% Create sample autocorrelation plot
+autocorr(data);
 title(oTitle);
+% Save plot as png in dedicated folder
 saveas(gcf, file_name);
+
+% Return
 state = true;
 
 end % of function
