@@ -13,8 +13,8 @@ function [params, std_err, var] = garchFit(data)
 N = length(data);
 
 % Initialize GARCH parameters to start optimization from
-const_0 = 0.5;
-alpha_0 = 0.5;
+const_0 = 0.1;
+alpha_0 = 0.3;
 beta_0 = 0.5;
 params_0 = [const_0, alpha_0, beta_0];
 
