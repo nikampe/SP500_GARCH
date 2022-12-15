@@ -13,12 +13,12 @@
 % Import data
 data = readtable('data.csv');
 
-% Number of observations
-N = length(prices);
 % Date vector
 dates = data{:,"Date"};
 % Price Vvctor from closing prices
 prices = data{:,"Close"};
+% Number of observations
+N = length(prices);
 % Log-, avsolute and squared return vector
 returns = log(prices(2:N) ./ prices(1:N-1));
 returns_absolute = abs(returns);
