@@ -96,7 +96,7 @@ disp("Probability CI Violations: " + round((violations/(N-n_pred))*100,2) + "%")
 
 % Plot of 95% Lower & Upper Bound vs. Return Realizations
 figure();
-plot(dates(n_pred+1:end), ci(:,1:2),"Color", "green"); hold on;
+plot(dates(n_pred+1:end), ci(:,1:2),"Color", "blue"); hold on;
 plot(dates(n_pred+1:end), returns(n_pred:end),"Color", "red"); 
 legend("Return Realization","95% Upper & Lower Bound");
 xlabel("Time (Year)");
