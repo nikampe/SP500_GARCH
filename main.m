@@ -12,7 +12,7 @@
 
 % Import data
 data = readtable('data.csv');
-
+ha 
 % Date vector
 dates = data{:,"Date"};
 % Price Vvctor from closing prices
