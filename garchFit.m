@@ -2,10 +2,10 @@ function [params, std_err, var] = garchFit(data)
 % Estimates the GARCH(1,1) in-sample parameters, std errors and the filtered 
 % variance process
 %
-% INPUT data 1xn ... any column vector of time series
-% OUTPUT params 3xn ... vector of estimated GARCH(1,1) parameters 
-%        std_error ... vector of standard errors of estimated parameters 
-%        var ... estimated filtered variance process 
+% INPUT data nx1 ... any column vector of time series
+% OUTPUT params 3x1 ... vector of estimated GARCH(1,1) parameters 
+%        std_error 3x1 ... vector of standard errors of estimated parameters 
+%        var nx1 ... estimated filtered variance process 
 %
 % MATLAB Class - Group Assignment | Charalampos Elenidis, Niklas Kampe
 

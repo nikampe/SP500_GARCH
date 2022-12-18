@@ -1,8 +1,8 @@
 function state = plotTs(x, y, x_label, y_label, oLegend, oTitle, file_name)
 % This function produces and saves a time series plot
 %
-% INPUT x 1xn ... any column vector on x-axis
-%       y 1xn ... any column vector on y-axis
+% INPUT x nx1 ... any column vector on x-axis
+%       y nx1 ... any column vector on y-axis
 %       x_label str ... text label of x-axis
 %       y_label str ... text label of y-axis
 %       oLegend str ... text label plotted series

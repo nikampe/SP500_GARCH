@@ -2,8 +2,8 @@
 % main.m
 %
 % A program to estimate GARCH(1,1) models (parameters and volatility process)
-% through MLE and to calculate the % 95% confidence intervals for 30d-ahead 
-% predictions on S&P500 daily returns
+% through MLE and to calculate the 95% confidence intervals for 30d ahead 
+% predictions of S&P 500 daily returns
 %
 % University of St. Gallen | MATLAB Class - Group Assignment
 % Authors: Charalampos Elenidis, Niklas Leander Kampe
@@ -12,7 +12,7 @@
 
 % Import data
 data = readtable('data.csv');
-ha 
+
 % Date vector
 dates = data{:,"Date"};
 % Price Vvctor from closing prices

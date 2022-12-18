@@ -1,7 +1,7 @@
 function state = plotAcf(data, oTitle, file_name)
 % Creates and saves a plot of Sample Autocorrelations 
 %
-% INPUT data 1xn ... any column vector of time series
+% INPUT data nx1 ... any column vector of time series
 %       oTitle str ... text title of plot
 %       file_name str ... folder location + file name to save plot
 % OUTPUT state  bool .. succes/failure of operation
